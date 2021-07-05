@@ -81,6 +81,9 @@
     body{
          overflow-x: hidden;
     }
+    .ahti-hero-nav .ahti-logo{
+        width: 17rem;
+    }
     .ahti-hero-btn{
         display: none;
     }
@@ -108,9 +111,9 @@
                 
     }
     .ahti-hero-links{
-
+        overflow-y: hidden;
         position: absolute;
-        height: 40vh;           
+        height: 83vh;                 
         top: 8vh;
         background-color: rgb(34, 23, 23); 
         display: flex;
@@ -118,7 +121,7 @@
         align-items: center; 
         transition: transform .5s ease-in;
         /* transform: translate(100%); */
-        margin-top: 25px;          
+        margin-top: 4rem;          
     }
     
     .ahti-hero-links{
