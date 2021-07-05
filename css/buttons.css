@@ -1,0 +1,30 @@
+.primary-btn{
+    background-color: var(--primary-button-light-brown);
+    padding: .72rem 1.5rem;
+    color:var(--white);
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    border-radius:25px 5px 25px 5px;
+    border: 0;
+    transition:all .3s ease-in-out ;
+}
+
+.primary-btn:hover{   
+    border-radius:5px 25px 5px 25px;
+    background-color: var(--primary-dark-brown);
+} 
+#btn-nav-links{
+    display: none;
+}
+@media screen and (max-width:980px) {
+    .primary-btn{
+        padding: .5rem 1rem;
+    }
+}
+@media screen and (max-width:768px){
+    .primary-btn{
+        padding: .72rem 1.5rem;;
+    }
+}
+

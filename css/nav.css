@@ -1,0 +1,139 @@
+.ahti-hero-nav{
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    min-height: 5rem;   
+}
+
+.ahti-hero-nav .ahti-logo {
+    width: 15rem;
+}
+@media screen and (max-width:980px) {
+    .ahti-hero-nav .ahti-logo{
+        width: 10rem;
+    }
+}
+.ahti-hero-links{
+    width: 40%;
+}
+@media screen and (max-width:1392px){
+    .ahti-hero-links{
+        width: 50%;
+    }
+}
+@media screen and (max-width:1100px){
+    .ahti-hero-links{
+        width: 60%;
+    }
+}
+
+.ahti-hero-nav ul{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+    font-size: 15px;
+    
+}
+.ahti-nav-burger{
+     display: none;  
+     cursor: pointer;   
+}
+.ahti-nav-burger .line{
+    width: 25px;
+    height: 3px;
+    background-color:var(--primary-dark-brown);
+    margin: 5px;
+}
+
+.ahti-hero-nav li{
+    transition: all .3s ease-out;
+    text-transform: uppercase; 
+    
+}
+@media screen and (max-width:980px) {
+    .ahti-hero-nav a{
+       font-size:12px;
+    }
+}
+.ahti-hero-links a{
+    letter-spacing: 3px;
+     color: var(--black);
+}
+
+
+@media screen and (max-width:768px) {
+    body{
+         overflow-x: hidden;
+    }
+
+    #nav-links{
+        transition: visibility 0s, opacity 0.9s ease-in;
+    }
+    #btn-nav-links{
+        display: block;
+        height: 0;      
+    }
+    .ahti-logo,
+    .ahti-nav-burger{
+        margin: 0 10px;
+    }
+    .ahti-nav-burger{
+        display: block;
+    }
+    .ahti-hero-nav{
+        position: relative;
+        justify-content: space-between; 
+        align-items: center; 
+                
+    }
+    .ahti-hero-links,.ahti-hero-btn{
+
+        position: absolute;
+        right: 0;  
+        height: 40vh;           
+        top: 8vh;
+        background-color: rgb(34, 23, 23); 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        transition: transform .5s ease-in;
+        /* transform: translate(100%); */
+        margin-top: 15px;          
+    }
+    
+    .ahti-hero-links{
+        width: 100%; 
+        text-align: center;    
+        
+    }
+    .ahti-hero-links ul{
+        flex-direction: column; 
+        height: 100%;  
+     
+    }
+    .ahti-hero-links a{
+        color: white;     
+
+    }
+    .ahti-hero-btn{
+        display: none;
+    }
+
+}
+/* .nav-active{
+    transform: translate(0%);
+} */
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform:58px;
+    }
+
+}
