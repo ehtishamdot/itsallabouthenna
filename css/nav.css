@@ -49,6 +49,11 @@
     background-color:var(--primary-dark-brown);
     margin: 5px;
 }
+@media screen and (max-width: 239px) {
+    .ahti-nav-burger .line{
+        width: 20px;
+    }
+}
 
 .ahti-hero-nav li{
     transition: all .3s ease-out;
@@ -71,6 +76,7 @@
          overflow-x: hidden;
     }
     #nav-links{
+        visibility: hidden;
         transition: visibility 0s, opacity 0.9s ease-in;     
     }
     #btn-nav-links{
@@ -101,7 +107,7 @@
         flex-direction: column; 
         align-items: center; 
         transition: transform .5s ease-in;
-        transform: translate(100%);
+        /* transform: translate(100%); */
         margin-top: 25px;          
     }
     
