@@ -102,7 +102,7 @@
         align-items: center; 
         transition: transform .5s ease-in;
         transform: translate(100%);
-        margin-top: 15px;          
+        margin-top: 25px;          
     }
     
     .ahti-hero-links{
