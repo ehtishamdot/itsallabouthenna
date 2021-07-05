@@ -20,11 +20,9 @@ function myFunction() {
     var x = document.getElementById("nav-links");
     if (x.style.visibility === "visible") {
       x.style.visibility = "hidden";
-    } else {
-      x.style.visibility = "visible";
-    }
-    if (x.style.opacity === "0") {
-      x.style.opacity = "1";
+    } 
+    if (x.style.opacity === "1") {
+      x.style.opacity = "0";
     } else {
       x.style.opacity = "1";
     }

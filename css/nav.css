@@ -70,9 +70,8 @@
     body{
          overflow-x: hidden;
     }
-
     #nav-links{
-        transition: visibility 0s, opacity 0.9s ease-in;
+        transition: visibility 0s, opacity 0.9s ease-in;     
     }
     #btn-nav-links{
         display: block;
@@ -102,7 +101,7 @@
         flex-direction: column; 
         align-items: center; 
         transition: transform .5s ease-in;
-        /* transform: translate(100%); */
+        transform: translate(100%);
         margin-top: 15px;          
     }
     
@@ -125,9 +124,9 @@
     }
 
 }
-/* .nav-active{
+.nav-active{
     transform: translate(0%);
-} */
+}
 
 
 @keyframes navLinkFade{
