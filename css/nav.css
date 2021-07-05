@@ -91,11 +91,10 @@
         visibility: hidden;
         transition:all .3s ease-in-out;   
     }
-
     #btn-nav-links{
            display: block;     
-    }
-      
+    } 
+
     .ahti-logo,
     .ahti-nav-burger{
         margin: 0 10px;
@@ -110,6 +109,7 @@
                 
     }
     .ahti-hero-links{
+
         overflow-y: hidden;
         position: absolute;
         height: 70vh;                 
@@ -121,6 +121,9 @@
         transition: transform .5s ease-in;
         /* transform: translate(100%); */
         margin-top: 4rem;          
+    }
+    .ahti-hero-nav ul{
+        margin-left: unset;
     }
     
     .ahti-hero-links{
