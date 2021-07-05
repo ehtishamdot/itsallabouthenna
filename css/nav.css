@@ -70,19 +70,30 @@
      color: var(--black);
 }
 
+  /* buttons */
+
+#btn-nav-links{
+    display: none;
+}
+
 
 @media screen and (max-width:768px) {
     body{
          overflow-x: hidden;
     }
+    .ahti-hero-btn{
+        display: none;
+    }
     #nav-links{
         visibility: hidden;
         transition: visibility 0s, opacity 0.9s ease-in;     
     }
+
     #btn-nav-links{
-        display: block;
-        height: 0;      
+           display: block;
+        transition: ease-in;     
     }
+      
     .ahti-logo,
     .ahti-nav-burger{
         margin: 0 10px;
@@ -96,10 +107,9 @@
         align-items: center; 
                 
     }
-    .ahti-hero-links,.ahti-hero-btn{
+    .ahti-hero-links{
 
         position: absolute;
-        right: 0;  
         height: 40vh;           
         top: 8vh;
         background-color: rgb(34, 23, 23); 
@@ -123,10 +133,6 @@
     }
     .ahti-hero-links a{
         color: white;     
-
-    }
-    .ahti-hero-btn{
-        display: none;
     }
 
 }
