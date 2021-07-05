@@ -91,10 +91,11 @@
         visibility: hidden;
         transition:all .3s ease-in-out;   
     }
+
     #btn-nav-links{
            display: block;     
     } 
-
+        
     .ahti-logo,
     .ahti-nav-burger{
         margin: 0 10px;
@@ -112,7 +113,7 @@
 
         overflow-y: hidden;
         position: absolute;
-        height: 70vh;                 
+        height: 40vh;                 
         top: 8vh;
         background-color: rgb(34, 23, 23); 
         display: flex;
@@ -141,9 +142,10 @@
     }
 
 }
-.nav-active{
+
+/* .nav-active{
     transform: translate(0%);
-}
+} */
 
 
 @keyframes navLinkFade{
