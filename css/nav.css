@@ -89,12 +89,11 @@
     }
     #nav-links{
         visibility: hidden;
-        transition: visibility 0s, opacity 0.9s ease-in;     
+        transition:all .3s ease-in-out;   
     }
 
     #btn-nav-links{
-           display: block;
-        transition: ease-in;     
+           display: block;     
     }
       
     .ahti-logo,
@@ -113,7 +112,7 @@
     .ahti-hero-links{
         overflow-y: hidden;
         position: absolute;
-        height: 83vh;                 
+        height: 70vh;                 
         top: 8vh;
         background-color: rgb(34, 23, 23); 
         display: flex;
