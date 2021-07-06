@@ -1,13 +1,15 @@
  /* cursor pointer */
  .ahti-hero-nav li,
  .ahti-nav-burger,
- .ahti-logo {
+ .ahti-logo,
+ .socials-icon img {
       cursor: pointer;
  }
 
  /* display none */
  #btn-nav-links,
- .ahti-nav-burger {
+ .ahti-nav-burger,
+ .socials-icon {
       display: none;
  }
 
@@ -69,11 +71,6 @@
       font-size: 14px;
  }
 
- .ahti-hero-nav li {
-      transition: all .3s ease-out;
-      text-transform: uppercase;
- }
-
  .ahti-hero-links a {
       letter-spacing: 3px;
       color: var(--black)
@@ -117,22 +114,19 @@
 
       /* display block */
       #btn-nav-links,
-      .ahti-nav-burger {
+      .ahti-nav-burger ,
+      .socials-icon{
            display: block
-      }
-
-      .ahti-logo,
-      .ahti-nav-burger {
-           margin: 10px 10px
       }
 
       /* parent nav */
       .ahti-hero-nav {
-           justify-content: flex-start;
+          justify-content: space-between;
            position: relative;
            align-items: center;
            height: 100%;
-           padding: unset
+           padding: unset;
+           margin: 10px 10px        
       }
 
       /* nav links ul li a */
@@ -192,5 +186,10 @@
       .toggle #line3 {
            transform: rotate(45deg) translate(-5px, -6px);
       }
+         /* .socials icons */
 
+      .socials-icon img{
+         padding: 0 5px;
+     }
+      
  }
