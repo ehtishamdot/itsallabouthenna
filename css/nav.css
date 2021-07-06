@@ -100,11 +100,13 @@
       margin: 5px
  }
 
- @media screen and (max-width: 239px) {
+ @media screen and (max-width: 240px) {
       .ahti-nav-burger .line {
            width: 20px
       }
  }
+
+  
 
 
  @media screen and (max-width:768px) {
@@ -197,5 +199,13 @@
       .socials-icon img{
          padding: 0 5px;
      }
-      
+    
  }
+
+   /* Social icons */
+
+   @media screen and (max-width: 265px) {
+     .socials-icon{
+          display: none;
+      }
+}   
