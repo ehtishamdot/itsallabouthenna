@@ -24,9 +24,14 @@ function navSlider() {
       } else {
         x.style.opacity = "1";
       }
-     
     }  
   }
+
+function activePage(){
+
+
+  
+}
 
   
   
