@@ -1,26 +1,12 @@
-// const navSlide = () => {
-//     const burger = document.querySelector('.ahti-nav-burger');
-//     const nav = document.querySelector('.ahti-hero-links');
-//     const btn = document.querySelector('.ahti-hero-btn');
-//     burger.addEventListener('click', () => {
-//         nav.classList.toggle('nav-active');
-//         btn.classList.toggle('nav-active-right');
-//     });
-// }
 
-// let burger = document.getElementById('nav-links');
-// if(burger.style.display == "block"){
-//     burger.style.display="none";
-// }
-// else{
-//     burger.style.display="block";
-// }
+  // burger animation
 function burgerActive(){
   const burger = document.querySelector('.ahti-nav-burger');
   burger.classList.toggle('toggle'); 
 
 }
 
+  //  nav slider
 function navSlider() {
     var linksMedia =window.matchMedia("(max-width:768px)")
     var x = document.getElementById("nav-links");
@@ -39,9 +25,7 @@ function navSlider() {
         x.style.opacity = "1";
       }
      
-    } 
-    
-   
+    }  
   }
 
   
