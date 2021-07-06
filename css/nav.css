@@ -167,9 +167,9 @@
 
       /* burger mobile responsive menu or slider */
       .ahti-nav-burger {
-           display: flex;
-           align-items: center;
-      }
+          display: flex;
+          align-items: center;
+     }
 
       .ahti-nav-burger h2 {
            margin: 0 10px;
