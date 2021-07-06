@@ -80,6 +80,10 @@
       border-bottom: 2px solid rgb(93, 91, 91);
       color: rgb(131, 118, 118);
  }
+ .ahti-hero-links a:after,
+ .active{
+      border-bottom: 2px solid rgb(93, 91, 91);
+ }
 
  @media screen and (max-width:980px) {
       .ahti-hero-nav a {
@@ -105,7 +109,6 @@
 
  @media screen and (max-width:768px) {
 
-
       /* display none */
       .ahti-hero-nav .ahti-logo,
       .ahti-hero-btn {
@@ -117,6 +120,11 @@
       .ahti-nav-burger ,
       .socials-icon{
            display: block
+          
+      }
+      .ahti-nav-burger,
+      .socials-icon{
+          margin: 10px 10px
       }
 
       /* parent nav */
@@ -125,8 +133,7 @@
            position: relative;
            align-items: center;
            height: 100%;
-           padding: unset;
-           margin: 10px 10px        
+           padding: unset;       
       }
 
       /* nav links ul li a */
@@ -141,6 +148,7 @@
            align-items: center;
            width: 100%;
            text-align: center;
+           margin: 10px 0;
       }
 
       #nav-links {
@@ -158,20 +166,17 @@
            color: white;
       }
 
-
       /* burger mobile responsive menu or slider */
       .ahti-nav-burger {
           display: flex;
           align-items: center;
      }
-
       .ahti-nav-burger h2 {
            margin: 0 10px;
            font-family: 'Open Sans', sans-serif;
            font-weight: normal;
       }
-
-      .ahti-nav-burger:hover {
+      .ahti-nav-burger:active {
            color: rgb(131, 118, 118);
       }
 
@@ -186,6 +191,7 @@
       .toggle #line3 {
            transform: rotate(45deg) translate(-5px, -6px);
       }
+
          /* .socials icons */
 
       .socials-icon img{
