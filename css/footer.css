@@ -1,0 +1,138 @@
+
+   /* display block */
+   .footer-social-icons{
+    display: block !important;
+   }
+
+/* parent */
+
+  .footer{
+      width: 100%;
+      background: #222020;
+      color: white;
+      overflow-x: hidden; 
+  }
+  .f-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+ 
+  }  
+  .f-container .col2,
+  .f-container .col3{
+      align-self: flex-start;
+  }
+
+  @media screen and (max-width:768px){
+    .f-container{
+        flex-direction: column;        
+    }
+    .f-container .col2,
+    .f-container .col3{
+      align-self: unset;
+  }
+  }
+
+  /* column 1 */
+  .col1{
+      width: 22%;  
+       
+  }
+  .col1 img{
+      width: 100%;   
+  }
+
+   /* column 2 */
+
+  .col2{    
+      text-align: center;
+      line-height: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;     
+  } 
+
+  .col2 h2,
+  .col2 h3,
+  .col2 p{
+      font-weight: lighter;
+  }
+
+  .col2 h2{
+      margin: 2rem 0 0 0;  
+      color: #CAA892;
+  }  
+  .col2 .footer-btn{
+      margin:1.5rem 0 2rem 0;
+  }
+
+  .col2 hr{
+      width: 200px;
+      border: 1px solid #cecece;
+
+  }
+ 
+  .col2 .footer-logo{
+     width: 18rem;
+  }
+  @media  (max-width:294px) {
+    .col2 .footer-logo{
+        width: 10rem;
+     }
+  }
+  .col2 .footer-social-icons{
+    margin:1.5rem 0 1.5rem 0;
+  }
+
+  .col2 p{
+      font-size: .8rem;  
+      font-family: 'Inter', sans-serif;
+  }
+
+  /* column3 */
+
+  .col3{
+    margin: 2rem 0;
+    width: 300px;
+    display: flex;
+    /* border: red solid 2px; */
+  }
+  .col3 h3{
+   font-size: 0.8rem;
+   width: 100%;
+   
+   /* border: 2px solid blue; */
+  }
+  .col3 .searchbar{
+    padding: 0.8rem;
+    width: 200px;
+    color: #0A142F;
+    font-family: 'Inter', sans-serif;
+    border-radius: 20px;
+    outline: 0;
+}
+  @media (max-width:768px)
+  {
+      .col1{
+          width: 50%;
+      }
+  }
+ @media screen and (max-width:600px){
+
+  /* column 1 */
+ 
+  .col1{
+    width: 100%;    
+ }
+ .col2{
+    width: 80%;
+ }
+
+ /* column3 */
+ .col3{
+    display: none;
+  }
+  
+ }
