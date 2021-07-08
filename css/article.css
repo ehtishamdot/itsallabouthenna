@@ -52,7 +52,7 @@
         width: 40%;
    }
 
-   @media (max-width:1400px) {
+   @media (max-width:1530px) {
         .container {
              width: 80%;
         }
@@ -91,7 +91,9 @@
         width: 10rem;
         margin: 5rem 0 0 2rem;
    }
-
+   .reviews .learnmore-services img{
+       width: 25rem;
+   }
    @media (max-width:1329px) {
         .learnmore-services img {
              margin: 5rem 3rem 3rem 0;
@@ -115,6 +117,9 @@
 
         .overlaydesign img {
              width: 18rem;
+        }
+        .reviews .learnmore-services img{
+            width: 15rem;
         }
    }
 
