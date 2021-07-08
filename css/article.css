@@ -3,35 +3,35 @@
        article {
         font-family: 'Open Sans', sans-serif;
         color: #404040;
-        margin-bottom: -2rem;
    }
 
-   h2 {
-        font-size: 2rem;
-        font-style: normal;
+   article h2,
+   article h5,
+   article p {
         font-weight: normal;
    }
-
-   h5 {
-        font-size: 1.1rem
+   article h2 {
+        font-size: 2rem;
    }
+   article h5 {
+        font-size: 1.1rem;
 
-   p {
-        font-style: normal;
+   }
+   article p {
         font-weight: 300;
         font-size: 1rem;
         line-height: 40px;
         letter-spacing: 1px;
    }
-
-   q {
+   article q {
         font-weight: 600;
         color: rgb(32, 25, 25);
    }
 
-   hr {
+  article  hr {
         border: 2px solid #222222;
         width: 50px;
+        margin-top: -1rem;
    }
 
    /* parents */
