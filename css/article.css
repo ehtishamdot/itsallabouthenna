@@ -53,7 +53,7 @@ article{
     width: 40%;
     /* overflow-y: hidden; */
 }
-@media (max-width:1200px){
+@media (max-width:1400px){
     .container{
         width: 80%;
     }
@@ -63,7 +63,7 @@ article{
     align-items: center;
     justify-content: center;
 }
-@media (max-width:1329px){
+@media (max-width:800px){
     .learnmore-services{
         flex-direction: column;
     }
@@ -114,6 +114,6 @@ article img{
  }
  .meetup .learnmore-services .secondary-btn{
     padding: .5rem 1rem;
-    font-size: .6rem;
+    font-size: .62rem;
  }
 }

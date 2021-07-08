@@ -27,11 +27,5 @@ function navSlider() {
     }  
   }
 
-function activePage(){
-
-
-  
-}
-
   
   
