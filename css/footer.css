@@ -12,6 +12,7 @@
       color: white;
       overflow-x: hidden;
       margin-top: 6rem;
+      border-top-left-radius: 100px;
   }
   .f-container{
     display: flex;
