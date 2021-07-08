@@ -12,7 +12,7 @@
       color: white;
       overflow-x: hidden;
       margin-top: 6rem;
-      border-top-left-radius: 100px;
+      border-top-right-radius: 80px;
   }
   .f-container{
     display: flex;
@@ -21,8 +21,7 @@
     font-family: 'Open Sans', sans-serif;
  
   }  
-  .f-container .col2,
-  .f-container .col3{
+  .f-container .col2{
       align-self: flex-start;
   }
 
