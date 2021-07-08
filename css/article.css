@@ -9,6 +9,7 @@
    article h5,
    article p {
         font-weight: normal;
+
    }
    article h2 {
         font-size: 2rem;
@@ -19,7 +20,7 @@
    }
    article p {
         font-weight: 300;
-        font-size: 1rem;
+        font-size: .9rem;
         line-height: 40px;
         letter-spacing: 1px;
    }
