@@ -6,13 +6,14 @@
       cursor: pointer;
  }
 
+ 
  /* display none */
  #btn-nav-links,
  .ahti-nav-burger,
  .socials-icon {
       display: none;
  }
-
+ 
  /* transitions */
  .ahti-hero-nav li,
  .ahti-nav-burger .line {
@@ -209,3 +210,5 @@
           display: none;
       }
 }   
+
+

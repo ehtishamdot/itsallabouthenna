@@ -10,7 +10,8 @@
       width: 100%;
       background: #222020;
       color: white;
-      overflow-x: hidden; 
+      overflow-x: hidden;
+      margin-top: 6rem;
   }
   .f-container{
     display: flex;

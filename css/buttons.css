@@ -1,7 +1,27 @@
+
 .primary-btn{
-    background-color: var(--primary-button-light-brown);
-    padding: .72rem 1.5rem;
     color:var(--white);
+    background-color: var(--primary-button-light-brown);
+}
+
+.primary-btn:hover{   
+    background-color: var(--primary-dark-brown);
+} 
+
+.secondary-btn{
+    color:var(--white);
+    background-color: var(--primary-dark-brown);
+}
+
+.secondary-btn:hover{   
+    background-color: rgb(92, 88, 88);
+} 
+
+
+
+.primary-btn,
+.secondary-btn{   
+    padding: .72rem 1.5rem;
     font-family: 'Oxygen', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -10,9 +30,9 @@
     transition:all .3s ease-in-out;
 }
 
-.primary-btn:hover{   
+.primary-btn:hover,
+.secondary-btn:hover{   
     border-radius:5px 25px 5px 25px;
-    background-color: var(--primary-dark-brown);
 } 
 
 @media screen and (max-width:980px) {
@@ -21,7 +41,8 @@
     }
 }
 @media screen and (max-width:768px){
-    .primary-btn{
+    .primary-btn,
+    .secondary-btn{
         padding: .72rem 1.5rem;;
     }
 }
