@@ -1,14 +1,24 @@
 
+header{
+    display: flex;
+    flex-direction: column;
+}
 .container-header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 90%;
     margin-top: 7rem;
     font-family: 'Open Sans', sans-serif;
     line-height: 40px;
+    align-self: center;
 }
-@media (max-width:890px){
+@media (max-width:1000px){
+    .container-header{
+        width: 100%;
+    }
+}
+@media (max-width:900px){
     .container-header{
         flex-direction: column;
         text-align: center;
