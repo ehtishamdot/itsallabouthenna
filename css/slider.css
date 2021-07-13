@@ -10,14 +10,14 @@
             position: relative;
 
        }
-
+      
        @media (max-width:1132px) {
             .slider__container {
                  width: 400px;
                  height: 300px;
             }
        }
-
+     
        @media (max-width:876px) {
 
             .slider__container {
@@ -63,7 +63,12 @@
             object-fit: cover;
 
        }
-
+       @media (min-width:876px){
+        .track img{
+            border-radius:90px 0 90px ;
+        }
+       }
+    
        /* buttons */
 
        .slider__btn {

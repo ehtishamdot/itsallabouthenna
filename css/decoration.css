@@ -1,0 +1,15 @@
+.decoration-top{
+    width: 100%;
+    margin-top: 7rem;
+}
+.decoration-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.golden-top{
+      width: 40rem;
+}
+.golden-top img{
+    width: 100%;
+}
