@@ -81,14 +81,14 @@ header{
     width: 100%;
 }
 .slider-top-left-img{
-    top: -130px;
-    left: -150px;
 
+    top: -96px;
+    left: -109px;
     
 }
 .slider-bottom-right-img{
-    bottom: -130px;
-    right: -160px;
+    bottom: -98px;
+    right: -74px;
 }
 @media (max-width:900px){
     .slider-bottom-right-img{

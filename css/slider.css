@@ -82,7 +82,7 @@
        }
        @media (min-width:900px){
         .track img{
-            border-radius:90px 0 90px ;
+            border-radius:0px 90px 0px 90px;
         }
        }
     
