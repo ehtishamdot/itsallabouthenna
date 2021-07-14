@@ -118,12 +118,7 @@
  }
  
 
-
-.col3 a {
-    transition: .5s ease all; 
-
-}
-.col3 a img{
+.col3  img{
    width: 1.5rem;
 }
 .col3 input{
