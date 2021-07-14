@@ -10,6 +10,11 @@
             position: relative;
 
        }
+       @media (min-width:900px){
+          .slider__container{
+              border-radius:90px 0 90px ;
+          }
+         }
        @media (max-width:1539px) {
         .slider__container {
              width: 600px;

@@ -16,10 +16,9 @@
   }
   .f-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
- 
   }  
   .f-container .col2{
       align-self: flex-start;
@@ -96,24 +95,44 @@
 
   .col3{
     margin: 2rem 0;
-    width: 300px;
+    
     display: flex;
-    /* border: red solid 2px; */
-  }
-  .col3 h3{
-   font-size: 0.8rem;
-   width: 100%;
-   
-   /* border: 2px solid blue; */
-  }
-  .col3 .searchbar{
-    padding: 0.8rem;
-    width: 200px;
-    color: #0A142F;
-    font-family: 'Inter', sans-serif;
     border-radius: 20px;
-    outline: 0;
+    padding: .2rem;
+    justify-self: center;
+    align-items: center;
+    color: white;
 }
+ 
+  .col3 .searchbar{
+  border: 0;
+  outline: 0;
+  background: 0;
+  width: 200px;
+  width: 0;
+  transition: .5s ease all; 
+ }
+ 
+
+
+.col3 a {
+    transition: .5s ease all; 
+
+}
+.col3 a img{
+   width: 2rem;
+}
+.col3 input{
+    color: rgb(235, 177, 177);
+    font-size: 15px;
+}
+.col3 input::placeholder{
+    color: rgb(235, 189, 189);
+    font-size: 15px;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
   @media (max-width:768px)
   {
       .col1{
@@ -132,8 +151,6 @@
  }
 
  /* column3 */
- .col3{
-    display: none;
-  }
+ 
   
  }
