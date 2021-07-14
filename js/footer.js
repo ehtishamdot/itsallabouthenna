@@ -7,7 +7,8 @@
 
   
     searchBox.addEventListener('mouseover' ,a=>{
-        search.style.width='200px'
+        search.style.width='200px';
+     
     })
     
     searchBox.addEventListener('mouseleave' ,a=>{

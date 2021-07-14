@@ -12,6 +12,7 @@ header{
     font-family: 'Open Sans', sans-serif;
     line-height: 40px;
     align-self: center;
+    
 }
 @media (max-width:1000px){
     .container-header{
@@ -67,4 +68,30 @@ header{
 }
 .container-header .ahti-header-btn{
     margin-top: 1rem;
+}
+
+/* // decoration */
+
+.slider-decoration{
+    position: absolute;
+    width: 15rem;
+    z-index: 100;
+}
+.slider-decoration img{
+    width: 100%;
+}
+.slider-top-left-img{
+    top: -130px;
+    left: -150px;
+
+    
+}
+.slider-bottom-right-img{
+    bottom: -130px;
+    right: -160px;
+}
+@media (max-width:900px){
+    .slider-bottom-right-img{
+       display: none;
+    }
 }
