@@ -23,3 +23,8 @@ a{
 .flex{
     display: flex;
 }
+
+hr{
+    border: 2px solid #222222;
+    width: 50px;
+}
