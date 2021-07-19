@@ -1,23 +1,23 @@
-.about-us{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.about-us-container{
-    width: 50%;
-    font-size: 1.2rem;
+.about-us-container {
+  width: 50%;
+  font-size: 1.2rem;
 }
-@media (max-width:1000px){
-    .about-us-container{
-        width: 80%;
-    }
+@media (max-width: 1000px) {
+  .about-us-container {
+    width: 90%;
+  }
 }
-.about-us-container p{
-    font-size: 1rem;
+.about-us-container p {
+  font-size: 1rem;
 }
-.about-us-container span{
-    font-weight: bolder;
-    color: rgb(119, 76, 48);
-    font-size: 1.2rem;
+.about-us-container span {
+  font-weight: bolder;
+  color: rgb(119, 76, 48);
+  font-size: 1.2rem;
 }
