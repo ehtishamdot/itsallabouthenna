@@ -1,0 +1,74 @@
+.services {
+  display: flex;
+}
+.services {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 80%;
+  height: 100%;
+  color: rgb(29, 25, 25);
+}
+@media (max-width: 1000px) {
+  .services-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+.services .col {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease all;
+}
+.services .col:hover {
+  transform: translateY(-5%);
+}
+
+.services .col .col-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(//img/cover-photos/bridal-mehndi.jpg) no-repeat cover;
+  height: 35%;
+  transition: 0.3s ease all;
+  background: rgb(88, 61, 24);
+  color: white;
+  padding: 10px;
+}
+.services .col .col-1:hover {
+  height: 100%;
+}
+
+.services .col .col-2 {
+  padding: 20px;
+}
+
+.top-heading {
+  margin-bottom: 3rem;
+}
+/* // TYPOGRAPHY */
+
+.top-heading h1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.services .col .col-2 h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.services .col .col-2 h4 {
+  font-weight: lighter;
+}
+.services .col .col-2 span {
+  font-weight: 400;
+  color: rgb(65, 54, 26);
+}
