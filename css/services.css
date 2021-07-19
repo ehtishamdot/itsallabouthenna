@@ -38,13 +38,9 @@
   align-items: center;
   justify-content: center;
   background-image: url(//img/cover-photos/bridal-mehndi.jpg) no-repeat cover;
-  transition: 0.3s ease all;
   background: rgb(88, 61, 24);
   color: white;
   padding: 10px;
-}
-.services .col .col-1:hover {
-  height: 100%;
 }
 
 .services .col .col-2 {
