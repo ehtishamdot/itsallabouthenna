@@ -65,7 +65,7 @@
 
 @media (max-width:750px) {
   .gallery-container{
-    grid-template-columns: auto auto  ;
+    grid-template-columns: auto auto;
   }
   .gallery-container .img img{
    filter: brightness(1) grayscale(0);
@@ -74,7 +74,9 @@
 @media (max-width:1000px) {
   .gallery-container{
     grid-template-columns: auto auto;
+    gap: 4px;
   }
+
   
 }
 
