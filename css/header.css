@@ -96,3 +96,7 @@ header {
 .container-header .hero-right {
   animation: expand 0.5s ease forwards;
 }
+
+header {
+  background: url(/img/header-bg.png);
+}
