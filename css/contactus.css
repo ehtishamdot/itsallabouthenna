@@ -8,6 +8,7 @@
 .contact-us-container {
   width: 1000px;
   margin-top: 5rem;
+  animation: slideUp 0.9s ease forwards;
 }
 @media (max-width: 1056px) {
   .contact-us-container {
