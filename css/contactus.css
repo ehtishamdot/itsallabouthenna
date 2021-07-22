@@ -1,0 +1,137 @@
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Open Sans;
+}
+.contact-us-container {
+  width: 1000px;
+  margin-top: 5rem;
+}
+@media (max-width: 1056px) {
+  .contact-us-container {
+    width: 500px;
+  }
+}
+@media (max-width: 555px) {
+  .contact-us-container {
+    width: 90%;
+  }
+}
+.email-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  padding: 30px;
+  border-radius: 30px;
+}
+@media (max-width: 1056px) {
+  .email-container {
+    flex-direction: column;
+  }
+}
+
+.email-container .letter-image {
+  width: 20rem;
+}
+@media (max-width: 555px) {
+  .email-container .letter-image {
+    width: 10rem;
+  }
+}
+.email-container .letter-image img {
+  width: 100%;
+  height: 100%;
+  color: brown;
+}
+.entry-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.entry-box input,
+.entry-box textarea {
+  margin: 1rem 0;
+}
+
+.entry-box input {
+  height: 48px;
+  width: 400px;
+  border: 1px solid rgb(227, 227, 227);
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  padding: 0px 20px;
+  transition: border-color 200ms ease 0s, box-shadow 200ms ease 0s;
+}
+.entry-box textarea {
+  height: 100px;
+  width: 400px;
+  border: 1px solid rgb(227, 227, 227);
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  padding: 12px 20px;
+  transition: border-color 200ms ease 0s, box-shadow 200ms ease 0s;
+}
+.entry-box button {
+  height: 56px;
+  width: 450px;
+  padding: 0px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(136, 85, 37) 0%,
+    rgb(211, 155, 109) 100%
+  );
+  border: none;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  border-radius: 30px;
+  transition: background 200ms ease 0s;
+  transition: background 0.3s ease;
+}
+.entry-box button:hover {
+  background-color: rgb(211, 155, 109);
+}
+
+@media (max-width: 555px) {
+  .entry-box input {
+    height: 48px;
+    width: 300px;
+  }
+  .entry-box textarea {
+    height: 100px;
+    width: 300px;
+  }
+  .entry-box button {
+    height: 56px;
+    width: 350px;
+  }
+}
+@media (max-width: 399px) {
+  .entry-box input {
+    height: 48px;
+    width: 200px;
+  }
+  .entry-box textarea {
+    height: 100px;
+    width: 200px;
+  }
+  .entry-box button {
+    height: 56px;
+    width: 250px;
+  }
+}
