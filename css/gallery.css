@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Open Sans', sans-serif;
 }
 .gallery-container {
   width: 90%;
@@ -79,13 +80,6 @@
   
 }
 
-/* TYPOGRAPHy */
-.top-heading h1 {
-  font-size: 2rem;
-  font-weight: lighter;
-  line-height: .1;
-
-} 
 
 .gallery .top-heading{
   margin-bottom: 5rem;

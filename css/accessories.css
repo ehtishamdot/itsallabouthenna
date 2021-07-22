@@ -28,3 +28,9 @@ hr{
     border: 2px solid #222222;
     width: 50px;
 }
+
+.top-heading h1{
+  font-size: 3rem;
+  font-weight: normal;
+  line-height:.5;
+}
