@@ -74,3 +74,9 @@
   color: rgb(148, 148, 148);
   letter-spacing: 0.4px;
 }
+
+.services .col .col-2 hr{
+  width: 250px;
+  border: .1px solid rgb(206, 206, 206);
+  margin-top: 2rem;
+}
