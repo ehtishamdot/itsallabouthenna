@@ -34,3 +34,10 @@ hr{
   font-weight: normal;
   line-height:.5;
 }
+
+.image-mix-gallery-aboutus{
+    margin-top: 5rem;
+}
+.image-mix-gallery-aboutus img{
+  width: 100%;
+}
