@@ -86,7 +86,16 @@ hr {
   line-height: 0.5;
   animation: slideRight 0.9s ease forwards;
 }
-
+@media (max-width: 500px){
+  .top-heading h1{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px){
+  .top-heading h1{
+    font-size: 1rem;
+  }
+}
 .image-mix-gallery-aboutus {
   margin-top: 5rem;
 }
