@@ -90,9 +90,7 @@ header {
   }
 }
 
-.container-header .hero-left {
- 
-}
+
 .container-header .hero-right {
   animation: expand 1s ease forwards;
 }
