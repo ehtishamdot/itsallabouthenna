@@ -22,7 +22,9 @@
 /* upper case */
 .ahti-hero-nav li {
   text-transform: uppercase;
+ 
 }
+
 
 /* parent nav */
 .ahti-hero-nav {
@@ -32,6 +34,7 @@
   flex-wrap: wrap;
   height: 5rem;
   z-index: 990;
+   
 }
 
 /* logo */

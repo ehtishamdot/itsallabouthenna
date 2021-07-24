@@ -91,12 +91,22 @@ header {
 }
 
 .container-header .hero-left {
-  animation: slideUp 0.9s ease forwards;
+ 
 }
 .container-header .hero-right {
-  animation: expand 0.5s ease forwards;
+  animation: expand 1s ease forwards;
 }
 
-header {
-  background: url(/img/header-bg.png);
+header{
+  backface-visibility: hidden;
 }
+
+ /* Animations */
+
+ .hero-left h3{
+   animation: slideUp 1s ease;
+ }
+
+ .hero-left h1{
+    animation: slideRight 1s ease;
+ }
