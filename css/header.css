@@ -1,6 +1,8 @@
 header {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid rgb(223, 218, 218);
+  padding-bottom: 5rem;
 }
 .container-header {
   display: flex;
@@ -33,7 +35,9 @@ header {
 }
 .container-header .hero-left {
   width: 40%;
-  animation: slideUp 0.9s ease forwards;
+  animation: slideUp 2s ease forwards;
+
+  
 }
 @media (max-width: 890px) {
   .container-header .hero-left {
@@ -102,9 +106,10 @@ header{
  /* Animations */
 
  .hero-left h3{
-   animation: slideUp 1s ease;
+   animation: slideUp 2s ease;
  }
 
  .hero-left h1{
     animation: slideRight 1s ease;
+ 
  }

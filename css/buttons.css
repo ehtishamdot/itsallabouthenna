@@ -28,11 +28,16 @@
     border-radius:25px 5px 25px 5px;
     border: 0;
     transition:all .3s ease-in-out;
+    
 }
 
 .primary-btn:hover,
 .secondary-btn:hover{   
     border-radius:5px 25px 5px 25px;
+    /* animation: moveUp .5s ease; */
+    transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+  
 } 
 
 @media screen and (max-width:980px) {
@@ -46,4 +51,6 @@
         padding: .72rem 1.5rem;;
     }
 }
+
+/* Animations */
 
