@@ -14,7 +14,11 @@
    grid-auto-flow: dense;
 }
 
-
+@media (max-width:1000px) {
+  .gallery-container{
+    width: 100%;
+  }
+}
 .gallery-container .img {
    height: auto;
    width: 100%;
