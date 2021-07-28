@@ -13,6 +13,11 @@
   margin-top: 6rem;
   border-top-right-radius: 80px;
 }
+@media (min-width:780px){
+  .footer{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  }
+}
 .f-container {
   display: flex;
   justify-content: center;

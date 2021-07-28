@@ -8,6 +8,8 @@
             width: 700px;
             height: 400px;
             position: relative;
+         
+
 
        }
        @media (min-width:900px){
@@ -56,6 +58,7 @@
             width: 100%;
             height: 100%;
             border: none;
+            
        }
 
        .slider__track {
@@ -78,11 +81,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-
+          
        }
        @media (min-width:900px){
         .track img{
             border-radius:0px 90px 0px 90px;
+            
         }
        }
     

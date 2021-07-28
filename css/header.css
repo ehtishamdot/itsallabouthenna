@@ -13,6 +13,7 @@ header {
   font-family: "Open Sans", sans-serif;
   line-height: 40px;
   align-self: center;
+ 
 }
 @media (max-width: 1000px) {
   .container-header {
@@ -103,6 +104,8 @@ header{
   backface-visibility: hidden;
 }
 
+
+
  /* Animations */
 
  .hero-left h3{
@@ -111,5 +114,4 @@ header{
 
  .hero-left h1{
     animation: slideRight 1s ease;
- 
  }
