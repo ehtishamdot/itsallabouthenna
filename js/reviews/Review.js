@@ -42,7 +42,6 @@ formContainer.addEventListener("submit", async (e) => {
   });
   await setReviews();
   await setUserIdentity();
-  renderReviews();
   location.reload();
 });
 
@@ -119,6 +118,7 @@ const getUserIdentity = async () => {
       if (doc.data().data.ip === data.ip) {
         status = true;
         clientsAddress = doc.data();
+
       }
     });
   } catch (err) {
