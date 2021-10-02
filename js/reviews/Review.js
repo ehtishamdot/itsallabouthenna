@@ -59,9 +59,7 @@ const renderReviews = () => {
     };
     const locate = navigator.language;
 
-    const reviewUploadDate = new Intl.DateTimeFormat(locate, options).format(
-      date
-    );
+    const reviewUploadDate = new Intl.DateTimeFormat(locate, options).format(date);
 
     console.log(date);
     const markup = `
@@ -120,7 +118,7 @@ const getUserIdentity = async () => {
     querySnapshot.forEach((doc) => {
       if (doc.data().data.ip === data.ip) {
         status = true;
-
+        clientsAddress = doc.data();
       }
     });
     console.log(status);
