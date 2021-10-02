@@ -5,6 +5,14 @@ const reviewBtn = document.querySelector(".entry-box");
 const reviewsContainer = document.querySelector(".review--box");
 
 let reviews = [];
+let clientsAddress = [];
+
+//fetch user ip
+const getUserIp = async () => {
+  const res = await fetch(`https://api.ipify.org?format=json`);
+  const data = await res.json();
+  clientsAddress.push([data]);
+};
 
 //submits the review
 formContainer.addEventListener("submit", async (e) => {
@@ -20,6 +28,10 @@ formContainer.addEventListener("submit", async (e) => {
   )
     return alert("fill it >.<");
 
+  getUserIp();
+
+  console.log(clientsAddress);
+
   reviews.push({
     firstname: firstname.value,
     lastname: lastname.value,
@@ -33,8 +45,6 @@ formContainer.addEventListener("submit", async (e) => {
   location.reload();
 });
 
-
-//renders the reviews
 const renderReviews = () => {
   reviewsContainer.innerHTML = "";
   reviews.forEach((rev) => {
@@ -70,8 +80,6 @@ const renderReviews = () => {
   });
 };
 
-
-//stores reviews in the firebase
 const setReviews = async () => {
   try {
     const docRef = await addDoc(collection(db, "reviews"), { reviews });
@@ -81,7 +89,6 @@ const setReviews = async () => {
   }
 };
 
-//retrieve reviews from firebase
 const getReviews = async () => {
   const querySnapshot = await getDocs(collection(db, "reviews"));
   querySnapshot.forEach((doc) => {
@@ -91,7 +98,6 @@ const getReviews = async () => {
 };
 getReviews();
 
-//set local ip of the user
 const setUserIdentity = async () => {
   try {
     const res = await fetch(`https://api.ipify.org?format=json`);
@@ -104,7 +110,6 @@ const setUserIdentity = async () => {
   }
 };
 
-//get local ip of the user
 const getUserIdentity = async () => {
   let status = false;
   try {
@@ -115,6 +120,7 @@ const getUserIdentity = async () => {
     querySnapshot.forEach((doc) => {
       if (doc.data().data.ip === data.ip) {
         status = true;
+
       }
     });
     console.log(status);
