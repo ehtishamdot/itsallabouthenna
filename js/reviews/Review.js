@@ -114,6 +114,7 @@ const getUserIdentity = async () => {
   try {
     const res = await fetch(`https://api.ipify.org?format=json`);
     const data = await res.json();
+    console.log(data);
 
     const querySnapshot = await getDocs(collection(db, "useridentity"));
     querySnapshot.forEach((doc) => {
