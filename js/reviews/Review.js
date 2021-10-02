@@ -14,10 +14,11 @@ const getUserIp = async () => {
   const data = await res.json();
   clientsAddress.push([data]);
 };
-
+ alert("Please do not Reload!\n*Close this prompt*");
 //submits the review
 formContainer.addEventListener("submit", async (e) => {
   reviewBtn.classList.add('hidden');
+  alert('Please do not reload the page \n Close this prompt');
   e.preventDefault();
   if (
     !(
