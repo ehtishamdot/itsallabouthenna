@@ -8,7 +8,7 @@ const formContainer = document.querySelector(".entry-box");
 formContainer.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  var url = `https://wa.me/923333957015?text=*Name*: ${firstname.value} ${lastname.value}%0a*Email*: ${email.value}%0a*Mobile number*: ${number.value}%0a*Question*: ${question.value}`;
+  const url = `https://wa.me/923333957015?text=*Name*: ${firstname.value} ${lastname.value}%0a*Email*: ${email.value}%0a*Mobile number*: ${number.value}%0a*Question*: ${question.value}`;
 
   window.open(url, "_blank").focus();
 });
