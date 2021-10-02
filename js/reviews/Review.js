@@ -2,6 +2,7 @@ import { collection, addDoc, db, getDocs } from "./firebase.js";
 
 const review = document.querySelector(".form--review");
 const reviewBtn = document.querySelector(".entry-box");
+const loaderBtn = document.querySelector(".lds-dual-ring");
 const reviewsContainer = document.querySelector(".review--box");
 
 let reviews = [];
@@ -45,25 +46,23 @@ formContainer.addEventListener("submit", async (e) => {
   location.reload();
 });
 
-const renderReviews = () => {
-  reviewsContainer.innerHTML = "";
-  reviews.forEach((rev) => {
-    console.log(rev.curDate);
-    const date = new Date(rev.curDate);
-    const options = {
-      hour: `numeric`,
-      minute: `numeric`,
-      day: `numeric`,
-      month: `long`,
-      year: `numeric`,
-      weekday: `long`,
-    };
-    const locate = navigator.language;
+const renderReviews = (rev) => {
+  console.log(rev);
+  const date = new Date(rev.curDate);
+  const options = {
+    hour: `numeric`,
+    minute: `numeric`,
+    day: `numeric`,
+    month: `long`,
+    year: `numeric`,
+    weekday: `long`,
+  };
+  const locate = navigator.language;
 
-    const reviewUploadDate = new Intl.DateTimeFormat(locate, options).format(date);
-
-    console.log(date);
-    const markup = `
+  const reviewUploadDate = new Intl.DateTimeFormat(locate, options).format(
+    date
+  );
+  const markup = `
          <div class="review"> 
                          <div class="review-profile">
                    <img src="/img/x.jfif" alt="" class="review--profile__picture"> 
@@ -72,11 +71,11 @@ const renderReviews = () => {
                 <h1 class="profile-info--name"> ${rev.firstname} ${rev.lastname}</h1>
                      <span class="profile-info--date">${reviewUploadDate}</span>
                      <span class="profile-info--text">${rev.review}</span>
-                    </div>                  
+                    </div>    
+                      
          </div>`;
 
-    reviewsContainer.insertAdjacentHTML("beforeend", markup);
-  });
+  reviewsContainer.insertAdjacentHTML("beforeend", markup);
 };
 
 const setReviews = async () => {
@@ -88,12 +87,12 @@ const setReviews = async () => {
   }
 };
 
+const test = [];
 const getReviews = async () => {
   const querySnapshot = await getDocs(collection(db, "reviews"));
   querySnapshot.forEach((doc) => {
-    reviews = doc.data().reviews;
+    renderReviews(...doc.data().reviews);
   });
-  renderReviews();
 };
 getReviews();
 
@@ -114,7 +113,6 @@ const getUserIdentity = async () => {
   try {
     const res = await fetch(`https://api.ipify.org?format=json`);
     const data = await res.json();
-    console.log(data);
 
     const querySnapshot = await getDocs(collection(db, "useridentity"));
     querySnapshot.forEach((doc) => {
@@ -123,8 +121,8 @@ const getUserIdentity = async () => {
         clientsAddress = doc.data();
       }
     });
-    console.log(status);
   } catch (err) {
+    console.log(err);
   } finally {
     if (status) {
       reviewBtn.classList.add("hidden");
@@ -132,6 +130,8 @@ const getUserIdentity = async () => {
       reviewBtn.classList.remove("hidden");
     }
     renderReviews();
+    console.log(reviews);
+    loaderBtn.classList.add("hidden");
   }
 };
 getUserIdentity();
