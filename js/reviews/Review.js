@@ -48,7 +48,8 @@ formContainer.addEventListener("submit", async (e) => {
 const renderReviews = () => {
   reviewsContainer.innerHTML = "";
   reviews.forEach((rev) => {
-    const date = new Date(new Date().getTime());
+    console.log(rev.curDate);
+    const date = new Date(rev.curDate);
     const options = {
       hour: `numeric`,
       minute: `numeric`,
