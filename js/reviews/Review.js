@@ -17,8 +17,8 @@ const getUserIp = async () => {
 
 //submits the review
 formContainer.addEventListener("submit", async (e) => {
+  reviewBtn.classList.add('hidden');
   e.preventDefault();
-
   if (
     !(
       firstname.value != "" &&
@@ -30,8 +30,6 @@ formContainer.addEventListener("submit", async (e) => {
     return alert("fill it >.<");
 
   getUserIp();
-
-  console.log(clientsAddress);
 
   reviews.push({
     firstname: firstname.value,
@@ -46,7 +44,6 @@ formContainer.addEventListener("submit", async (e) => {
 });
 
 const renderReviews = (rev) => {
-  console.log(rev);
   const date = new Date(rev.curDate);
   const options = {
     hour: `numeric`,
