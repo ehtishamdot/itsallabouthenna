@@ -129,9 +129,7 @@ const getUserIdentity = async () => {
     } else {
       reviewBtn.classList.remove("hidden");
     }
-    renderReviews();
-    console.log(reviews);
-    loaderBtn.classList.add("hidden");
+    loaderBtn.style.display = 'none'
   }
 };
 getUserIdentity();
