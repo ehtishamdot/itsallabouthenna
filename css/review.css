@@ -11,8 +11,15 @@
 @media (max-width: 1030px) {
   .review-container {
     flex-direction: column;
-    height: 100%;
+    height: 30rem;
     width: 95%;
+  }
+}
+
+
+@media (max-width: 1030px) {
+  .entry-box {
+    margin-bottom: 5rem;
   }
 }
 
@@ -23,11 +30,6 @@
   position: relative;
 }
 
-@media (max-width: 1030px) {
-  .review--box {
-    margin-top: 4rem;
-  }
-}
 
 .review {
   display: flex;
@@ -42,8 +44,8 @@
   padding-bottom: 0.5rem;
 }
 
-.review:not(:first-child) {
-  margin: 1rem 0;
+.review:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .review-profile {

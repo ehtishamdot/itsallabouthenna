@@ -14,6 +14,7 @@ const getUserIp = async () => {
   const data = await res.json();
   clientsAddress.push([data]);
 };
+
 //submits the review
 formContainer.addEventListener("submit", async (e) => {
   reviewBtn.classList.add('hidden');
