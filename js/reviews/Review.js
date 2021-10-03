@@ -19,8 +19,8 @@ const getUserIp = async () => {
 
 //submits the review
 formContainer.addEventListener("submit", async (e) => {
-  reviewBtn.classList.add('hidden');
-  alert('Please do not reload the page \n Close this prompt');
+  reviewBtn.classList.add("hidden");
+  feedback.classList.remove("hidden");
   e.preventDefault();
   if (
     !(
@@ -41,9 +41,10 @@ formContainer.addEventListener("submit", async (e) => {
     review: review.value,
     curDate: new Date().getTime(),
   });
+
+  renderReviews(reviews[0]);
   await setReviews();
   await setUserIdentity();
-  location.reload();
 });
 
 const renderReviews = (rev) => {
@@ -57,10 +58,10 @@ const renderReviews = (rev) => {
     weekday: `long`,
   };
   const locate = navigator.language;
-
   const reviewUploadDate = new Intl.DateTimeFormat(locate, options).format(
     date
   );
+
   const markup = `
          <div class="review"> 
                          <div class="review-profile">
@@ -74,7 +75,7 @@ const renderReviews = (rev) => {
                       
          </div>`;
 
-  reviewsContainer.insertAdjacentHTML("beforeend", markup);
+  reviewsContainer.insertAdjacentHTML("afterbegin", markup);
 };
 
 const setReviews = async () => {
@@ -86,12 +87,20 @@ const setReviews = async () => {
   }
 };
 
-const test = [];
 const getReviews = async () => {
+  let sortedReviews = [];
+
   const querySnapshot = await getDocs(collection(db, "reviews"));
   querySnapshot.forEach((doc) => {
-    renderReviews(...doc.data().reviews);
+    sortedReviews.push(...doc.data().reviews);
   });
+
+  console.log(sortedReviews);
+  sortedReviews
+    .sort((a, b) => a.curDate - b.curDate)
+    .forEach((review) => {
+      renderReviews(review);
+    });
 };
 getReviews();
 
@@ -118,7 +127,6 @@ const getUserIdentity = async () => {
       if (doc.data().data.ip === data.ip) {
         status = true;
         clientsAddress = doc.data();
-
       }
     });
   } catch (err) {
@@ -130,12 +138,7 @@ const getUserIdentity = async () => {
     } else {
       reviewBtn.classList.remove("hidden");
     }
-    loaderBtn.style.display = 'none'
+    loaderBtn.style.display = "none";
   }
 };
 getUserIdentity();
-
-// var {Filter} = require('bad-words'),
-//    filter = new Filter();
-
-// console.log(filter.clean("Don't be an ash0le")); //Don't be an ******
