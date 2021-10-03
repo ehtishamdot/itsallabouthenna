@@ -5,6 +5,8 @@ const reviewBtn = document.querySelector(".entry-box");
 const loaderBtn = document.querySelector(".lds-dual-ring");
 const reviewsContainer = document.querySelector(".review--box");
 
+const feedback = document.querySelector(".feedback");
+
 let reviews = [];
 let clientsAddress = [];
 
@@ -124,6 +126,7 @@ const getUserIdentity = async () => {
   } finally {
     if (status) {
       reviewBtn.classList.add("hidden");
+      feedback.classList.remove("hidden");
     } else {
       reviewBtn.classList.remove("hidden");
     }
