@@ -11,7 +11,7 @@
 @media (max-width: 1030px) {
   .review-container {
     flex-direction: column;
-    height: 100%;
+    height: 60rem;
     width: 95%;
   }
 }
